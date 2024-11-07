@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.appui",
+    "sha256_cert_fingerprints":
+    ["A6:8A:43:65:62:FD:04:F0:CA:50:91:EF:6E:90:53:EE:FF:C5:A6:E7:5A:43:3F:DE:BB:68:DF:E3:BE:96:98:A8"]
+  }
+}]
