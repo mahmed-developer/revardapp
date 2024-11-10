@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My App Landing Page</title>
+  <script>
+    window.onload = function() {
+      var appLink = "https://revardapp.pages.link"; // Replace 'yourapp' with your actual app's deep link
+      window.location.href = appLink;
+
+      setTimeout(function() {
+        window.location.href = "https://apps.apple.com/yourapp"; // Replace with your app's App Store or Play Store link
+      }, 2000); // Adjust the delay as needed
+    };
+  </script>
+</head>
+<body>
+  <h1>Redirecting to App...</h1>
+  <p>If the app doesn't open, you will be redirected to the App Store shortly.</p>
+</body>
+</html>
