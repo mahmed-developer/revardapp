@@ -6,27 +6,16 @@
   <title>My App Landing Page</title>
   <script>
     window.onload = function() {
-      var universalLink = "https://revardapp.pages.dev";  // Universal link
-      var appStoreLink = "https://apps.apple.com/yourapp"; // App Store or Play Store link
-      var customUri = "revardapp://";  // Replace with your actual custom URI scheme
-
-      // Attempt to open the app using universal link
-      window.location.href = universalLink;
-
-      // If the app doesn't open within 1500ms, try the custom URI
+      var appLink = "https://revardapp.pages.dev/"; // Replace 'yourapp' with your actual app's deep link
+      window.location.href = appLink;
       setTimeout(function() {
-        window.location.href = customUri;
-      }, 1500);
-
-      // If neither link works, redirect to the App Store
-      setTimeout(function() {
-        window.location.href = appStoreLink;
-      }, 3000);
+        window.location.href = "https://apps.apple.com/yourapp"; // Replace with your app's App Store or Play Store link
+      }, 2000); // Adjust the delay as needed
     };
   </script>
 </head>
 <body>
   <h1>Redirecting to App...</h1>
   <p>If the app doesn't open, you will be redirected to the App Store shortly.</p>
-</body> 
+</body>
 </html>
